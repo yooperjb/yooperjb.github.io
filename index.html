@@ -1,23 +1,44 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <title>Jason Barnes</title>
+</head>
+<body>
+  <!-- navigation -->
+  <header>
+    <div id="name-box">
+      <h1>
+        <a href="/">Jason Barnes</a>
+      </h1>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#bike-life">Bike Life</a>
+            </li>
+            <li>
+                <a href="#gis">GIS</a>
+            </li>
+            <li>
+                <a href="#web-dev">Web Dev</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+  </header> <!-- end navigation -->
+  
+  <!-- footer -->
+  <footer>
+    <h2>❤️ Made with love by Jason Barnes</h2>
+    <div>
+        <a href="#">Read OUr Privacy Policy</a><br />
+        &copy; Jason Barnes
+    </div>
+</footer>
+</body>
+</html>
