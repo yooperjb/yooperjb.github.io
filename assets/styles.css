@@ -6,10 +6,11 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: grey;
 }
 /* Header Styles */
 header {
-    height: 120px;
+    height: 100px;
     padding: 30px 35px;
     background-color: #276a82;
     position: relative;
@@ -27,7 +28,7 @@ header a {
     color: white;
 }
 #name-box {
-    width: 250px;
+    width: 200px;
     position: absolute;
     top: 50px;
     left: 75px;
@@ -55,10 +56,20 @@ nav a:hover {
 }
 /* End Navigation Styles */
 
+/* Hero Styles */
+.hero {
+    background-image: url("./images/jb_hero.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+/* End Hero Styles */
+
 /* Footer Styles */
 footer {
     background: #df6a3c;
     padding: 40px 10px;
+    
 }
 
 /* End Footer Styles */
